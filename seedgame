@@ -1,0 +1,56 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+	string seedColor = "";
+	cout << "Enter the seed color (red or blue): \n";
+	cin >> seedColor;
+
+	int temp = 0;
+	cout << "Enter the tempurature (F): \n";
+	cin >> temp;
+
+	string soilMoisture = "";
+	cout << "Enter the soil moiture (wer or dry): \n";
+	cin >> soilMoisture;
+
+	if (seedColor == "red")
+	{
+		if (temp >= 75)
+		{
+			if (soilMoisture == "wet")
+			{
+				cout << "A sunflower will grow. \n";
+			}
+			if (soilMoisture == "dry")
+			{
+				cout << "A dandelion will grow. \n";
+			}
+		}
+		else
+		{
+			cout << "A muhroom will grow. \n";
+		}
+	}
+	if (seedColor == "blue")
+	{
+
+		if (temp >= 60 && temp <= 70)
+		{
+			if (soilMoisture == "wet")
+			{
+				cout << "A dandelion will grow. \n";
+			}
+			if (soilMoisture == "dry")
+			{
+				cout << "A sunflower will grow. \n";
+			}
+		}
+		else
+		{
+			cout << "A mushroom will gow. \n"
+		}
+	}
+}
